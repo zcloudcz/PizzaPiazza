@@ -1,0 +1,11 @@
+{
+  "name": "pizza-piazza",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node ../RestaurantCommon/scripts/serve.mjs pizza",
+    "build": "node ../RestaurantCommon/scripts/build.mjs pizza",
+    "preview": "node ../RestaurantCommon/scripts/serve.mjs pizza --preview"
+  }
+}
