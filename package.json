@@ -6,6 +6,16 @@
   "scripts": {
     "dev": "node ../RestaurantCommon/scripts/serve.mjs pizza",
     "build": "node ../RestaurantCommon/scripts/build.mjs pizza",
-    "preview": "node ../RestaurantCommon/scripts/serve.mjs pizza --preview"
+    "preview": "node ../RestaurantCommon/scripts/serve.mjs pizza --preview",
+    "android": "npm run build && cap sync android && cap open android",
+    "sync": "npm run build && cap sync"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.2"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@capacitor/ios": "^8.5.2"
   }
 }
